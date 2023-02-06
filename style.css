@@ -31,14 +31,14 @@ h4 {
 
 img {
   display: block;
+  height: auto;
+  width: 100%;
 }
-@media (max-width: 960px) {
-  .header {
-    /*grid-template-columns: repeat(2, 1fr);*/
-  }
-}
-@media (min-width: 960px) {
+
+@media screen and (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+    background-color: cadetblue;
+    grid-template-areas: repeat(2, 1fr);
   }
 }
